@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes and Condtional Statements</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <!-- div>ul>li{Item-$}*7 shortut -->
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+</body>
+<script>
+    var name = "Google";
+    var name = "Amazon";
+    console.log(name);
+    let age = 45;
+    {
+        let age = 30;
+        console.log("This is local variable let value : " + age);
+    }
+    console.log("This is global variable let value : " + age);
+    const a = "This cannot be changed";
+    // a="I will change the value";
+    console.log(a);
+    const vote = 18;
+    if (vote >= 18) {
+        console.log("You can vote");
+    }
+    else if (vote == 15) {
+        console.log("you have to wait still 3 years");
+    }
+    else {
+        console.log("you dont have vote eligibity");
+    }
+    /* Switch case statements*/
+    var week = "Thursday";
+    switch (week) {
+        case "Monday":
+            console.log("Monday");
+            break;
+        case "Tuesday":
+            console.log("Monday");
+            break;
+        case "Wednesday":
+            console.log("Monday");
+            break;
+
+        default:
+            console.log("sunday enjoy the day");
+            break;
+    }
+</script>
+
+</html>

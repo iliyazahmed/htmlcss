@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings |String Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit. </h1>
+        <div id="content"></div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis beatae quae tempora architecto,
+            natus
+            molestias voluptatum! Ex animi illum obcaecati ducimus, doloribus eaque quam sit minus natus quis itaque qui
+            est
+            nesciunt culpa!
+        </p>
+    </div>
+    <script>
+        var name = "rohit";
+        var jerseyName = 45;
+        var iplTeam = "Mumbai Indians";
+        var temp = `${name} is playing for ${iplTeam} from 2011 and captain of ${iplTeam}`;
+        console.log(name);
+        console.log(temp);
+        var y = new String("This");
+        console.log(y);
+        document.getElementById("content").innerHTML = "<h3>This Head created by used the inner html in the javascript </h3>"
+        var companyName = "Think n Solutions";
+        var job = "I am a developer";
+        console.log(companyName);
+        console.log(companyName.indexOf("i")); //first index finds
+        console.log(companyName.lastIndexOf("i")); //last index
+        console.log(companyName.slice(1,7));  // it takes negtive values
+        console.log(companyName.substring(1,7)); // it doesn't negtive values
+        console.log(companyName.substr(2,6)); // from index to limit of index
+        console.log(job);
+        console.log(job.toUpperCase());
+        console.log(job.toLowerCase());
+        var replaced = job.replace("developer","Software Engineer 1");
+        console.log(replaced);
+   </script>
+</body>
+
+</html>

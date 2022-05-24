@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alignments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Macondo', cursive;
+
+        }
+
+        .container {
+            width: 990px;
+            background-color: aliceblue;
+            border: 5px solid peru;
+            margin: 33px auto;
+            /*Makes center alignment  margin : auto*/
+
+        }
+
+        .items {
+            border: 3px solid orangered;
+            margin: 12px 3px;
+            padding: 15px 5px;
+
+        }
+
+        /* .para {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } */
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #vegtables {
+            float: right;
+            width: 48%;
+        }
+
+        #dryfruits {
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum autem
+                consequuntur fugiat quibusdam, atque ipsam modi earum aliquid iste debitis a id perspiciatis accusantium
+                dolorem corporis expedita nisi voluptate in</p>
+        </div>
+
+
+        <div id="vegtables" class="items">
+            <h3>Vegtables</h3>
+            <p id="vegtablesPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+                autem
+                consequuntur fugiat quibusdam, atque ipsam modi earum aliquid iste debitis a id perspiciatis accusantium
+                dolorem corporis expedita nisi voluptate in</p>
+        </div>
+
+
+        <div id="dryfruits" class="items">
+            <h3> Dry Fruits</h3>
+            <p id="dryFruitsPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+                autem
+                consequuntur fugiat quibusdam, atque ipsam modi earum aliquid iste debitis a id perspiciatis accusantium
+                dolorem corporis expedita nisi voluptate in</p>
+        </div>
+
+</body>
+
+</html>
