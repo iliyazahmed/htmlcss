@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/feedbackform.css">
+</head>
+
+<body>
+    <header id="feedback-form">
+        <h2>College FeedBack Form</h2>
+    </header>
+    <form name="FeedBackForm" action="./submitform.html">
+
+        <div id="container-form" class="container">
+            <div id="fName" class="form">
+                <label for="fn">First Name</label>
+                <input type="text" name="fn" pattern="[a-zA-Z]{1,}" title="it doesn't takes numbers and characters"
+                   placeholder="Enter your First Name"   required autofocus>
+            </div>
+            <br>
+            <div id="lName" class="form">
+                <label for="ln">Last Name</label>
+                <input type="text" name="ln" pattern="[a-zA-Z]{1,}" placeholder="Enter your Last Name" required>
+            </div>
+            <br>
+            <div id="rollNo" class="form">
+                <label for="rNo">Enter Your Roll Number</label>
+                <input type="text" name="rNo" minlength="10" maxlength="10" pattern="[0-9]{2}[a-z]{1}[0-9]{7}" placeholder="Enter Your 10 Digit University Roll Number">
+            </div>
+            <br>
+            <div id="mobileNumber" class="form">
+                <label for="mobNum">Mobile Number</label>
+                <input type="tel" name="mobNo" title="Please,Enter 10 digits" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your Mobile Number">
+            </div>
+            <br>
+            <div id="emailAddress" class="form">
+                <label for="emailAddress">Enter Your Email ID</label>
+                <input type="email" name="emailid" placeholder="Enter Your Email Address">
+            </div>
+            <br>
+            <div id="gender-form" class="form">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" required="required">Male
+                <input type="radio" name="gender" required="required">Female
+            </div>
+            <br>
+            <div class="standard-form" class="form" style="margin-left: -73px;">
+                <label for="class" id="label-class" >
+                    Which Branch You Belongs to ?
+                </label>
+
+                <!-- Dropdown options -->
+                <select name="standard" id="role" required>
+                    <option value="">Select</option>
+                    <option value="branch1">Mechanical Engineering</option>
+                    <option value="branch2">Computer Science</option>
+                    <option value="branch3">
+                        Electrical and Electronics
+                    </option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div id="suggestion-box" class="form">
+                <label for="sBox">Suggestion-Box</label>
+                <textarea name="sB" id="sBox" cols="30" rows="10" placeholder="Any Suggestions.."></textarea>
+            </div>
+            <br>
+
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="clear" class="button">
+
+    </form>
+    <footer id="footer">
+
+        Copyright &copy; 2020
+    </footer>
+</body>
+
+</html>
